@@ -15,8 +15,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: ColorUtils.CreateMaterialColor('5F7161'),
-        ),
+            seedColor: ColorUtils.CreateMaterialColor('5F7161')),
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,

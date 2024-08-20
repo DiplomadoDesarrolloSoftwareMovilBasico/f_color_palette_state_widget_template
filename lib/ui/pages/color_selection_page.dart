@@ -19,14 +19,16 @@ class ColorSelectionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: const Text('Color palette app'),
           actions: [
-            IconButton(onPressed: showDialog, icon: Icon(Icons.info_outline))
+            IconButton(
+                onPressed: showDialog, icon: const Icon(Icons.info_outline))
           ],
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () => print('Hello'),
-          child: Icon(Icons.plus_one),
+          child: const Icon(Icons.plus_one),
         ),
         body: SafeArea(
           child: SingleChildScrollView(
